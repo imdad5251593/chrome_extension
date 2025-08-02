@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Group History Tracker",
+  "version": "1.0",
+  "description": "Track the history of tabs opened and closed within tab groups",
+  "permissions": [
+    "tabs",
+    "tabGroups",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Tab Group History"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
